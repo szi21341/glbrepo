@@ -13,7 +13,7 @@ document.body.appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 const loader = new GLTFLoader();
-loader.load('https://github.com/szi21341/glbrepo/blob/main/sandwich.glb', (object) => {
+loader.load('sandwich.glb', (object) => {
     object.scale.set(0.01, 0.01, 0.01); // FBX models are often huge
     scene.add(object);
 });
